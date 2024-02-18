@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@400;700&display=swap');
+
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Header styles */
+.site-header {
+    text-align: center;
+    background-color: #57068c; /* NYU Violet */
+    color: white;
+    padding: 15px 0;
+}
+
+/* Hero image styles */
+.hero-image {
+    height: 100vh;
+    background: url('welcome.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+/* Grid container styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100vh;
+    width: 100vw;
+}
+
+/* Grid item styles */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* NYU color classes for each section */
+.introduction { background-color: #57068c; }
+.gallery { background-color: #290a59; }
+.video { background-color: #3e1f75; }
+.contact { background-color: #452a8d; }
+
+/* Link styles within grid items */
+.grid-item a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 25vh);
+    }
+
+    .grid-item {
+        padding: 1rem;
+    }
+}
+
+
+
+/* Cats Introduction Page Specific Styles */
+/* Header */
+.intro-header {
+    text-align: center;
+    background-color: #57068c; /* NYU Violet */
+    color: white;
+    padding: 15px 0;
+}
+
+/* Footer */
+.intro-footer {
+    text-align: center;
+    background-color: #57068c; /* NYU Violet */
+    color: white;
+    padding: 15px 0;
+}
+
+.button{
+    position: absolute; /* Fixed position */
+    top: 25px; /* 10px from the top */
+    left: 10px; /* 10px from the right */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Ensures the text within each element is also centered */
+    padding: 20px; /* Adds some spacing around your content */
+}
+
+.cat-intro-content, .instagram-link, .articles-links {
+    width: 80%; /* Adjusts the width of the content to not span the full page */
+    max-width: 600px; /* You can set a max-width to prevent your content from getting too wide on large screens */
+    margin-bottom: 20px; /* Adds some space between each section */
+}
+
+/* Optionally, ensure images are not too large */
+img {
+    max-width: 100%; /* Makes sure images are not wider than their container */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+
+
+/* Cats Gallery Page Specific Styles */
+/* Header */
+.gallery-header {
+    text-align: center;
+    background-color: #57068c; /* NYU Violet */
+    color: white;
+    padding: 15px 0;
+}
+
+/* Footer */
+.gallery-footer {
+    text-align: center;
+    background-color: #57068c; /* NYU Violet */
+    color: white;
+    padding: 15px 0;
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-images img {
+  width: 100%;
+  display: none;
+}
+
+.carousel-images img.active {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  z-index: 100;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+
+
+/* Video Page Specific Styles */
+
+/* Header */
+.video-header {
+    text-align: center;
+    background-color: #57068c; /* NYU Violet */
+    color: white;
+    padding: 15px 0;
+}
+
+/* Footer */
+.video-footer {
+    text-align: center;
+    background-color: #57068c; /* NYU Violet */
+    color: white;
+    padding: 15px 0;
+}
+
+.video-size {
+    text-align: center;
+    margin: auto;
+    /*width: 100vw;
+    height: calc(100vh - 100px); 
+    bject-fit: cover;*/
+}
+
+/* Contact Page Specific Styles */
+.contact-image {
+    height: 100vh;
+    background: url('welcome2.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+/* General styling for the contact section */
+.contact {
+    background-color: #57068C; /* NYU violet */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the content */
+    width: 100%; /* Spread across the width of the page */
+}
+
+/* Styling for the heading */
+.contact h2 {
+    text-align: center; /* Center-align the heading */
+    color: white; /* Heading text color */
+}
+
+/* Styling for the form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form items */
+    width: 100%; /* Form takes full width */
+}
+
+/* Styling for input and textarea elements */
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 90%; /* Make inputs take up most of the form width */
+    padding: 10px; /* Padding inside inputs */
+    margin: 10px 0; /* Margin around inputs */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Additional styling for the textarea */
+.contact textarea {
+    height: 100px; /* Set a fixed height */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Styling for the submit button */
+.contact button {
+    background-color: #FFFFFF; /* White background */
+    color: #57068C; /* NYU violet text */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    margin-top: 10px; /* Margin above the button */
+}
+
+/* Hover effect for the button */
+.contact button:hover {
+    background-color: #47047A; /* A darker violet for hover effect */
+    color: white; /* White text on hover */
+}
