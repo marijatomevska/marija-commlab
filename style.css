@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@400;700&display=swap');
 
+@font-face {
+    font-family: Lora;
+    src: url('../font/Lora/Lora-VariableFont_wght.ttf');
+}
+
+
 /* Base styles */
 body, html {
     margin: 0;
@@ -14,6 +20,7 @@ body, html {
     background-color: #57068c; /* NYU Violet */
     color: white;
     padding: 15px 0;
+    font-family: Lora;
 }
 
 /* Hero image styles */
@@ -60,7 +67,7 @@ body, html {
 .introduction { background-color: #57068c; }
 .gallery { background-color: #290a59; }
 .video { background-color: #3e1f75; }
-.contact { background-color: #452a8d; }
+.contact1 { background-color: #452a8d; }
 
 /* Link styles within grid items */
 .grid-item a {
@@ -69,6 +76,7 @@ body, html {
     color: white;
     position: relative;
     z-index: 1;
+    font-family: Lora;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -85,6 +93,15 @@ body, html {
 
 
 
+
+
+
+
+
+
+
+
+
 /* Cats Introduction Page Specific Styles */
 /* Header */
 .intro-header {
@@ -92,6 +109,7 @@ body, html {
     background-color: #57068c; /* NYU Violet */
     color: white;
     padding: 15px 0;
+    font-family: Lora;
 }
 
 /* Footer */
@@ -100,6 +118,7 @@ body, html {
     background-color: #57068c; /* NYU Violet */
     color: white;
     padding: 15px 0;
+    font-family: Lora;
 }
 
 .button{
@@ -115,6 +134,7 @@ main {
     align-items: center;
     text-align: center; /* Ensures the text within each element is also centered */
     padding: 20px; /* Adds some spacing around your content */
+    font-family: Lora;
 }
 
 .cat-intro-content, .instagram-link, .articles-links {
@@ -123,11 +143,31 @@ main {
     margin-bottom: 20px; /* Adds some space between each section */
 }
 
+.cat-intro-content {
+    border: 2px solid #000; /* This adds a 2px solid black border */
+    padding: 10px; /* This adds some space between the border and the text inside */
+    margin: 20px 0; /* This adds some space outside the border, above and below the div */
+}
+
+.articles-links ul {
+        list-style-type: none; /* This removes the bullet points */
+    }
+
 /* Optionally, ensure images are not too large */
 img {
     max-width: 100%; /* Makes sure images are not wider than their container */
     height: auto; /* Maintains the aspect ratio of the image */
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -138,6 +178,7 @@ img {
     background-color: #57068c; /* NYU Violet */
     color: white;
     padding: 15px 0;
+    font-family: Lora;
 }
 
 /* Footer */
@@ -146,6 +187,7 @@ img {
     background-color: #57068c; /* NYU Violet */
     color: white;
     padding: 15px 0;
+    font-family: Lora;
 }
 
 .carousel {
@@ -181,14 +223,24 @@ img {
 
 
 
-/* Video Page Specific Styles */
 
+
+
+
+
+
+
+
+
+
+/* Video Page Specific Styles */
 /* Header */
 .video-header {
     text-align: center;
     background-color: #57068c; /* NYU Violet */
     color: white;
     padding: 15px 0;
+    font-family: Lora;
 }
 
 /* Footer */
@@ -197,15 +249,28 @@ img {
     background-color: #57068c; /* NYU Violet */
     color: white;
     padding: 15px 0;
+    font-family: Lora;
 }
 
 .video-size {
     text-align: center;
     margin: auto;
-    /*width: 100vw;
-    height: calc(100vh - 100px); 
-    bject-fit: cover;*/
 }
+
+.video-descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Ensures the text within each element is also centered */
+    padding: 20px; /* Adds some spacing around your content */
+    font-family: Lora;
+}
+
+
+
+
+
+
 
 /* Contact Page Specific Styles */
 .contact-image {
@@ -228,12 +293,14 @@ img {
     color: white; /* Text color */
     padding: 20px; /* Padding around the content */
     width: 100%; /* Spread across the width of the page */
+    font-family: Lora;
 }
 
 /* Styling for the heading */
 .contact h2 {
     text-align: center; /* Center-align the heading */
     color: white; /* Heading text color */
+    font-size: 50px;
 }
 
 /* Styling for the form */
@@ -242,17 +309,19 @@ img {
     flex-direction: column;
     align-items: center; /* Center the form items */
     width: 100%; /* Form takes full width */
+    font-family: Lora;
 }
 
 /* Styling for input and textarea elements */
 .contact input[type="text"],
 .contact input[type="email"],
 .contact textarea {
-    width: 90%; /* Make inputs take up most of the form width */
+    width: 50%; /* Make inputs take up most of the form width */
     padding: 10px; /* Padding inside inputs */
     margin: 10px 0; /* Margin around inputs */
     border: none; /* Remove border */
     border-radius: 5px; /* Slightly rounded corners */
+    font-family: Lora;
 }
 
 /* Additional styling for the textarea */
